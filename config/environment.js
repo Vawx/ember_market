@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'marketplace',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://marketplace-ember.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
