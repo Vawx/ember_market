@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+.black-header {
+  background-color: rgb(42,42,42);
+}
+
+.nav-tabs li a {
+  color: white;
+}
+
+.nav-tabs li a:hover {
+  color: rgb(200,150,50);
+}
+
+.title-header {
+  color: white;
+  font-family: 'Fjalla One';
+}
+
+body {
+  background-color: rgb(100,100,100);
+}
