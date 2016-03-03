@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  shoppingCart: Ember.inject.service(),
-
+  cartSvc: Ember.inject.service(),
+  
   model(){
-    return this.get('shoppingCart');
+    return this.get('cartSvc');
   },
 });

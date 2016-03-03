@@ -1,0 +1,8 @@
+
+<div class="row">
+  {{#each model.items as |item|}}
+    {{cart-item item=item}}
+  {{/each}}
+</div>
+
+{{total-cost}}

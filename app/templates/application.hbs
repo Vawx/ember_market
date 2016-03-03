@@ -1,13 +1,19 @@
-<div class="col-xs-10 col-xs-offset-1">
-  <div class="row black-header">
-    <a href="">{{#link-to 'index'}}<h1 class="title-header" style="margin-left:24px;">Market-Place</h1>{{/link-to}}</a>
-    {{social-tile}}
-    <ul class="nav nav-tabs navbar-right">
-      <li role="presentation">{{#link-to 'index'}}Home{{/link-to}}</li>
-      <li role="presentation">{{#link-to 'shopping-cart'}}Shopping Cart{{/link-to}}</li>
-      <li role="presentation">{{#link-to 'admin'}}Admin{{/link-to}}</li>
-    </ul>
+<header class="jumbotron black-header">
+  {{#link-to 'index'}} <h1 class="title-header" style="margin-left:24px;">Market-Place</h1>{{/link-to}}
+  <div class="social col-xs-4">
+    <a href="#"><img src="http://png-1.vector.me/files/images/7/4/741730/twitter_thumb.png" width="7%" alt="" /></a>
+    <a href="#"><img src="https://www.facebookbrand.com/img/fb-art.jpg" alt="" width="7%" /></a>
+    <a href="#"><img src="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/yelp-icon.png" alt="" width="7%" /></a>
   </div>
-</div>
+  <ul class="nav nav-tabs navbar-right">
+    <li role="presentation">{{#link-to 'index'}}Home{{/link-to}}</li>
+    <li role="presentation">{{#link-to 'cart'}}<span class="glyphicon glyphicon-shopping-cart"></span>{{/link-to}}</li>
+    <li role="presentation">{{#link-to 'admin'}}Admin{{/link-to}}</li>
+  </ul>
+</header>
 
-{{outlet}}
+<div class="container">
+
+  {{outlet}}
+
+</div>
