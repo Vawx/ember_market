@@ -1,3 +1,7 @@
 {{outlet}}
 
-{{admin-panel saveInventory="saveInventory"}}
+{{admin-panel model=model saveInventory="saveInventory"}}
+
+{{#each model as |i|}}
+  {{display-item  item=i destroyMe="destroyInv"}}
+{{/each}}

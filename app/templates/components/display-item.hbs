@@ -1,0 +1,21 @@
+{{yield}}
+
+<div class="col-md-3">
+  <div class="well display-item" style="max-height:350px; width:220px;">
+
+    <h2>{{item.name}}</h2>
+
+    <h3><span class="label label-default">${{item.cost}}.00</span></h3>
+
+    <img src="{{item.img}}" style="max-height:150px;"/>
+
+    {{#if admin }}
+      <span {{action 'destroyMe' item}} class="btn btn-danger glyphicon glyphicon-shopping-cart">X</span>
+    {{else}}
+      <span {{action 'addToCart' item}} class="btn btn-success glyphicon glyphicon-shopping-cart">+</span>
+    {{/if}}
+
+<!-- {{log admin}} -->
+
+  </div>
+</div>

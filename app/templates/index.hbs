@@ -1,5 +1,7 @@
 {{outlet}}
 
-{{#each model as |i|}}
-  {{display-frame addToCart="addToCart" inventory=i}}
-{{/each}}
+<div class="display row">
+  {{#each model as |item|}}
+    {{display-item addToCart="addToCart" item=item}}
+  {{/each}}
+</div>
