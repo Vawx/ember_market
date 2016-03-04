@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   items: [],
-  grandTotal: 0,
+  // grandTotal: 0,
 
   add(item){
     var newCartItem = {
